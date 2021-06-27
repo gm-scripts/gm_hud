@@ -42,6 +42,28 @@ const toggleHUD = (bool: boolean) => {
       show: bool,
     }),
   );
+  SendNuiMessage(
+    JSON.stringify({
+      type: "conf",
+      colorFood: conf["appearance"].colors.hunger,
+      colorWater: conf["appearance"].colors.thirst,
+      colorMoney: conf["appearance"].colors.money,
+      colorJob: conf["appearance"].colors.job,
+      colorTime: conf["appearance"].colors.time,
+      colorBg: conf["appearance"].colors.background,
+      foodActive: conf["show"].hunger,
+      waterActive: conf["show"].thirst,
+      moneyActive: conf["show"].money,
+      jobActive: conf["show"].job,
+      timeActive: conf["show"].time,
+      timeFormat: conf["appearance"].timeFormat,
+      scale: conf["appearance"].scale,
+      opacity: conf["appearance"].opacity,
+      gapScale: conf["appearance"].gapScale,
+      barScale: conf["appearance"].barScale,
+      position: conf["appearance"].position,
+    }),
+  );
 };
 
 const configLoaded = (): void => {
