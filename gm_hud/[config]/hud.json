@@ -1,0 +1,31 @@
+{
+  "framework": "esx",
+  "useToggleKey": true,
+  "toggleKey": 57,
+  "hideHUDAllow": true,
+  "defaultState": 1,
+  "show": {
+    "hunger": true,
+    "thirst": true,
+    "money": true,
+    "time": true,
+    "job": true
+  },
+  "appearance": {
+    "position": "bottom-left",
+    "timeFormat": "h2:m2/D2/M2/Y4",
+    "jobFormat": "_job_ / _grade_",
+    "scale": 0.6,
+    "gapScale": 0.3,
+    "barScale": 7.0,
+    "opacity": 1.0,
+    "colors": {
+      "background": "#4a4a55E6",
+      "hunger": "#b07921",
+      "thirst": "#2471A3",
+      "money": "#4f872b",
+      "time": "#422b87",
+      "job": "#87502b"
+    }
+  }
+}
